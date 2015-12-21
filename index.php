@@ -20,15 +20,7 @@
      <div class="row">
          
         <div class="col-md-12">
-            
-            <?php
-            if (function_exists('bootstrapwp_breadcrumbs')) {
-                
-                bootstrapwp_breadcrumbs();
-                
-            }
-            ?>
-            
+
         </div><!--/.col -->
          
     </div><!--/.row -->

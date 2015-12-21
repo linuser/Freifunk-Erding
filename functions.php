@@ -163,6 +163,15 @@ function bootstrapwp_widgets_init() {
     );
     
 
+register_sidebar(array(
+		'name'=> 'Sidebar',
+		'id' => 'sidebar',
+   		'before_widget' => '<aside><div id="%1$s" class="widget %2$s">',
+        'after_widget' => "</div></aside>",
+        'before_title' => '<h4 class="widget-title">',
+        'after_title' => '</h4>',
+	));
+
     register_sidebar(
             array(
                 'name' => __('Footer Column 1', 'bicbswp'),
@@ -434,6 +443,10 @@ function bootstrapwp_enhanced_image_navigation($url) {
 }
 
 add_filter('attachment_link', 'bootstrapwp_enhanced_image_navigation');
+
+/**
+
+*/
 
 
 

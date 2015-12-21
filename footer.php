@@ -67,9 +67,12 @@
     </div>
 </footer>
 <?php wp_footer(); ?>
+<hr />
+<div id="container">
 <div align="center">Design<a href="http://www.weimarnetz.de/" target="_blank"> Feifunk Weimar </a> | Wordpress Umsetzung <a href="http://www.planetfox.de" target="_blank">PlaNet Fox </a> 
   für <a href="http://www.freifunk-erding.de" title="Freifunk Erding " target="_blank">Freifunk Erding</a><p>
   
+   </div>
    </div>
 </body>
 </html>

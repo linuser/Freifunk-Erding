@@ -1,6 +1,6 @@
 <?php defined('ABSPATH') or die();
 /**
- * Template Name: Hero
+ 
  * Description: Page template with a content container and right sidebar. 
  * @author Nina Taberski-Besserdich (nina.taberski@besserdich.com)
  * @package WordPress
@@ -87,7 +87,7 @@
         
         
          
-        
+  <hr />      
     </div><!-- container -->
     
     

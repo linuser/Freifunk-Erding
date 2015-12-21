@@ -41,6 +41,6 @@ get_header(); ?>
 [ do default stuff if no widgets ]
 <?php endif; ?>
 	</div>
-    <hr />
+  
 </div>
 <?php get_footer(); ?>

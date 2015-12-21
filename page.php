@@ -17,16 +17,7 @@
      <div class="row">
          
         <div class="col-sm-10">
-            <p></p>
-            <?php
-            if (function_exists('bootstrapwp_breadcrumbs')) {
-                
-                bootstrapwp_breadcrumbs();
-                
-            }
-            ?>
-            
-        </div><!--/.col -->
+       </div><!--/.col -->
          
     </div><!--/.row -->
     

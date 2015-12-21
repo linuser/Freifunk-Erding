@@ -77,12 +77,31 @@
                                             'walker' => new wp_bootstrap_navwalker())
                                         );
                                         ?>
+                         
+
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="/impressum" class="dropdown-toggle"  data-toggle="dropdown">Impressum <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li  ><a href="/impressum">Impressum</a></li>
+          <li  ><a href="/datenschutz/">Datenschutz</a></li>
+          <li  ><a href="/Kontakt/">Kontakt</a></li>
+        </ul>
+      </li>
+    </ul>
                          </div>
-  
+
+						<?php
+
+ 
+ 
+
+?>
+
   </div>
   <?php } ?>
                                 
                 </div><!-- /.container -->
             </div><!-- /.top-main-menu -->
-
      <!-- End Header. Begin Template Content -->
