@@ -5,4 +5,4 @@ Design by: www.weimarnetz.de
 Template Base by: Besser Dich Redmann -> besserdich-redmann.com
 Bootstrape Base: http://getbootstrap.com
 
-Plugins Need it 
+Plugins Optional 

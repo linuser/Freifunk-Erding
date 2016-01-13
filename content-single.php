@@ -15,7 +15,6 @@
 
             <p class="meta"><?php echo bootstrapwp_posted_on(); ?> <?php edit_post_link(__('Edit', 'bicbswp')); ?>
                 <br/>
-                <?php bicbswp_cats_tags(); ?> 
             </p>
         </aside><!--end .entry-details -->
     </header><!--end .entry-header -->
@@ -24,56 +23,9 @@
     <section class="post-content">
        
             <div class="entry-content">
-                 
-                
-                
-                <?php 
-                // only show if option set TODO
-                
-                $options = get_option('bicbswp_theme_options');
-                
-                    if($options['featured_single'] == true ){
-                                    
-             if ( has_post_thumbnail() ) { ?>
-                        
-                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute('echo=0'); ?>">
-                            
-                              <?php $options = get_option('bicbswp_theme_options');
-                            
-                                switch ($options['featured_img_sing_size']) {
-                                    
-                                   case 1:
-                                       $thumbnail_size="thumbnail";
-                                       break; 
-                                   case 2: 
-                                       $thumbnail_size="medium";
-                                       break;
-                                   case 3:
-                                       $thumbnail_size="large";
-                                       break; 
-                                   default: 
-                                       $thumbnail_size="thumbnail";
-                                }
-                            ?>
-                            <?php the_post_thumbnail($thumbnail_size); ?>
-                            
-                            
-                        </a>
-                            
-                       <?php  }   
-                                    
-					
-                    } ?>
-                
-                
-               
-                 
-                   
-                        <?php echo the_content();?>
-                        
-               
-                </div>
 
+                        <?php echo the_content();?>
+<?php the_tags('Tagged with: <span class="label label-info">','</span> <span class="label label-info">','</span>'); ?>
       
 
     </section>

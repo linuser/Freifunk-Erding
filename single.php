@@ -26,6 +26,7 @@ get_header();
     endif; ?>
 
 
+ <?php the_tags('Tagged with: <span class="label label-info">','</span> <span class="label label-info">','</span>'); ?>
 
 
 

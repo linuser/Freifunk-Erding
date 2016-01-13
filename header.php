@@ -36,6 +36,9 @@
     <link rel="apple-touch-icon-precomposed"
           href="<?php echo get_stylesheet_directory_uri();?>/assets/ico/apple-touch-icon-57-precomposed.png">
            <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+            <link href="../csssocial-buttons-3.css/" rel="stylesheet"> 
+            <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"     
+            
     <?php wp_head(); ?>
 </head>
 <body id="home" class="fixed-nav">

@@ -44,6 +44,7 @@
 
                         </article>
 
+ <?php the_tags('Tagged with: <span class="label label-info color: #555;">','</span> <span class="label label-info color: #555;">','</span>'); ?>
                     </div> <!-- /.content -->
                     
                 </div> <!-- /.col -->

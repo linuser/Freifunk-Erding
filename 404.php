@@ -10,7 +10,7 @@
 ?>
 <?php get_header(); ?>
 
-
+<p></p>
 
      <div class="container main">
          
@@ -60,26 +60,32 @@
                     <div class="content main">
 
                    <header class="page-title">
-                                        <h1><?php _e('This is Embarrassing', 'bicbswp'); ?></h1>
+                                        <h1><?php _e('This is Embarrassing', 'Freifunk_Erding'); ?></h1>
                                     </header>
 
                                     <p class="lead"><?php _e(
                                         'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help.',
-                                        'bicbswp'
+                                        'Freifunk_Erding'
                                     ); ?></p>
 
-                                   <div class="well">
-                                       <?php get_search_form(); ?>
-                                   </div>
+                             <form role="form" action="<?php bloginfo('siteurl'); ?>/" id="searchform" method="get">
+    <label for="s" class="sr-only">Search</label>
+    <div class="input-group">
+        <input type="text" class="form-control" id="s" name="s" placeholder="Search"<?php if ( $search_terms !== '' ) { echo ' value="' . $search_terms . '"'; } ?> />
+        <span class="input-group-btn">
+            <button type="submit" class="btn btn-primary"><i class="icon-search"></i></button>
+        </span>
+    </div> <!-- .input-group -->
+</form>
                                     
                                     
                                     
-                                     <h2><?php _e('All Pages', 'bicbswp'); ?></h2>
+                                     <h2><?php _e('All Pages', 'Freifunk_Erding'); ?></h2>
                    <?php wp_page_menu(); ?>
                                      
                                       <?php the_widget('WP_Widget_Recent_Posts'); ?>
 
-                   <h2><?php _e('Categories', 'bicbswp'); ?></h2>
+                   <h2><?php _e('Categories', 'Freifunk_Erding'); ?></h2>
                    <ul>
                        <?php wp_list_categories(
                        array(
