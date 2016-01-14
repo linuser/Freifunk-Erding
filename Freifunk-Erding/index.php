@@ -1,14 +1,125 @@
-<?php get_template_part('templates/page', 'header'); ?>
+<?php defined('ABSPATH') or die();
+/**
+ * Description: Default Index template to display loop of blog posts
+ * @author PlaNet Fox  Alexander Fox
+ * @package WordPress
+ * @subpackage Freifunk_Erding 
+ */
+?>
 
-<?php if (!have_posts()) : ?>
-  <div class="alert alert-warning">
-    <?php _e('Sorry, no results were found.', 'sage'); ?>
-  </div>
-  <?php get_search_form(); ?>
-<?php endif; ?>
+<?php get_header(); ?>
 
-<?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
-<?php endwhile; ?>
 
-<?php the_posts_navigation(); ?>
+
+
+     <div class="container main">
+         
+         
+         
+         
+     <div class="row">
+         
+        <div class="col-md-12">
+
+        </div><!--/.col -->
+         
+    </div><!--/.row -->
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="row">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+
+            <?php
+            if ((is_front_page()) && (is_paged() == false)) {
+
+                $options = get_option('bicbswp_theme_options');
+
+                if ($options['front_page'] != '') {
+
+                    $page = get_post($options['front_page']);
+
+                    echo apply_filters( 'the_content', get_post_field('post_content', $page) );
+                    
+                }
+                ?>
+
+                <div class="container marketing">
+
+                    <?php get_sidebar('home'); ?>
+
+                </div> 
+
+               
+            <?php } ?>
+
+        </div><!--/.col -->
+
+    </div><!--/.row -->
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     <div class="row main-content">
+         
+                
+         
+        <div class="col-lg-9 col-md-9 col-sm-9 col-9">
+            
+                                <div class="content">
+
+
+            <?php
+            if (have_posts()) : while (have_posts()) : the_post();
+
+                    get_template_part('content', get_post_format());
+
+                endwhile;
+            endif;
+
+            if (function_exists('wp_pagenavi')) {
+
+                wp_pagenavi();
+            } else {
+
+                bootstrapwp_content_nav('nav-below');
+            }
+            ?>
+                                </div>
+        </div><!--/.col -->
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-3 sidebar-wrapper">
+
+            <?php get_sidebar('post'); ?>
+
+        </div><!--/.col -->
+        
+    
+     </div> <!--/.row -->
+        
+        
+        
+        
+         
+        
+    </div><!-- container -->
+    
+    
+    
+    
+<?php get_footer(); ?>
+
