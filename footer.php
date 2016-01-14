@@ -71,7 +71,7 @@
 <div id="container">
 <div align="center">
   <p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/de/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/bootstrap/images/cc.png" width="88" height="31" /></a></p>
-  <p>Design<a href="http://www.weimarnetz.de/" target="_blank"> Feifunk Weimar </a> | Wordpress Umsetzung <a href="http://www.planetfox.de" target="_blank">PlaNet Fox </a> 
+  <p>Design<a href="http://www.weimarnetz.de/" target="_blank"> Freifunk Weimar </a> | Wordpress Umsetzung <a href="http://www.planetfox.de" target="_blank">PlaNet Fox </a> 
     für <a href="http://www.freifunk-erding.de" title="Freifunk Erding " target="_blank">Freifunk Erding</a></p>
   <p><a href="https://www.freifunk-erding.de/Kontakt/"><img src="<?php bloginfo('template_directory'); ?>/bootstrap/images/flat_web_icon_set/color/Email.png" width="32" height="32" /></a>
   
