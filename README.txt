@@ -6,3 +6,5 @@ Template Base by: Besser Dich Redmann -> besserdich-redmann.com
 Bootstrape Base: http://getbootstrap.com
 
 Plugins Optional 
+
+Contact7 Form
